@@ -26,4 +26,12 @@ def sarrus(m3):
     A2 = m3[0][2] * m3[1][1] * m3[2][0] + m3[1][2] * m3[2][1] * m3[0][0] + m3[0][1] * m3[1][0] * m3[2][2]
     return A1 - A2
 
+def dibujar(m3):
+    print("La matriz es: ")
+    for i in range(len(m3)):
+        print (m3[i])
 
+matriz = [[2,4,6],[3,0,3],[2,2,3]]
+dibujar(matriz)
+print("El determinante iterativo es: ",grado3(matriz))
+print("El determinante de Sarrus es: ", sarrus(matriz))
