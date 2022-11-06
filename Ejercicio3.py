@@ -55,5 +55,18 @@ lista.append(h)
 
 nn= sorted(lista, key = lambda x:x.nombre)
 imprimir(nn)
+an= sorted(lista, key = lambda x:x.largo, reverse = True)
+imprimir(an)
+imprimir2(lista,"Halcon Milenario")
+imprimir2(lista, "Estrella de la muerte")
+ad = sorted(lista, key = lambda x:x.pasajero, reverse = True)
+imprimir3(ad,5)
+af = sorted(lista, key = lambda x:x.tripulacion, reverse = True)
+imprimir3(ad,1)
+imprimir3(lista,6)
+
+print(an[0])
+print(an[-1])
+imprimir5(lista, "AT")
 
 
